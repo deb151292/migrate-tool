@@ -67,3 +67,10 @@ DB_SSLMODE=disable
 DB_SCHEMA=test
 
 ```
+
+## Authors
+DEBOJYOTI CHAKRABORTY
+- GitHub : [@deb151292](https://github.com/deb151292/migrate-tool)
+- Email : [deb151292@gmail.com](deb151292@gmail.com)
+
+Please feel free to contact me for any queries.
