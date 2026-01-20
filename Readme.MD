@@ -2,7 +2,7 @@
 # msql (migrate-psql)
 
 - Softwere Requirements
-    1) Need golang
+    1) golang (recomended version > 1.21)
     2) postgresql
 
 With this you can create migration query and migrate psql commands
@@ -77,7 +77,7 @@ CREATE EXE FILE & EXECUTE
       ./app.exe <command>
       Example : To create file -> ./app.exe -file create-roles -gen
       ```
- ## Now you can run this with only this 
+ ### Now you can run this with only this 
 
  ![Needed directory structure](image.png)
 
@@ -99,3 +99,5 @@ DEBOJYOTI CHAKRABORTY
 - Email : [deb151292@gmail.com](deb151292@gmail.com)
 
 Please feel free to contact me for any queries.
+
+👨🏼‍💻 HAPPY CODING !!! 👨🏼‍💻
