@@ -26,11 +26,11 @@ func SqlRunner() {
 		log.Println("No .env file found, using system env")
 	}
 
-	sqlFile := flag.String("file", "", "SQL file name (relative to sql/migrate folder)")
+	sqlFile := flag.String("file", "", "SQL file name (relative to sql/migrate directory)")
 	runCreate := flag.Bool("create", false, "Run CREATE section")
 	runDrop := flag.Bool("drop", false, "Run DROP section")
 	generate := flag.Bool("gen", false, "Generate SQL template file")
-	allFileFlag := flag.Bool("all", false, "Migrate all files in sql/migrate folder directory")
+	allFileFlag := flag.Bool("all", false, "Migrate all files in sql/migrate directory")
 	flag.Parse()
 
 	if *generate {
@@ -53,8 +53,10 @@ func SqlRunner() {
 		}
 	}
 
-	if *runCreate == *runDrop {
-		log.Fatal("Specify exactly one: -create OR -drop")
+	if !*generate {
+		if *runCreate == *runDrop {
+			log.Fatal("Specify exactly one: -create OR -drop")
+		}
 	}
 
 	cfg := database.Config{
