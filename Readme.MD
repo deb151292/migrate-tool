@@ -77,8 +77,8 @@ CREATE EXE FILE & EXECUTE
       ./app.exe <command>
       Example : To create file -> ./app.exe -file create-roles -gen
       ```
- ### Now you can run this with only this 
- 
+ ## Now you can run this with only this 
+
  ![Needed directory structure](image.png)
 
 create a .env file add the contents below
